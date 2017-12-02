@@ -1,7 +1,7 @@
 <template>
   <div class="header" :style="{background:bgColor}">
       <slot>
-        <button @click="back">{{nav}}</button>
+        <button @click="back" :style="{background:bgColor,border:0}">{{nav}}</button>
       </slot>
       <h2>{{title}}</h2>
   </div>
@@ -12,7 +12,7 @@ export default {
   props: ['title','bgColor','nav'],
   data () {
     return {
-      
+
     }
   },
   methods:{

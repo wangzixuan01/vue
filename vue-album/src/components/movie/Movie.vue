@@ -68,4 +68,8 @@ export default {
        margin-bottom: 1rem;
        text-align   : center;
     }
+  button{
+    background: rgb(33, 150, 243);
+    border: 0;
+  }
 </style>

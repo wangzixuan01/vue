@@ -7,7 +7,7 @@ import Photo from '@/components/photo/Photo'
 import MovieTop250 from '@/components/movie/MovieTop250'
 import Albums from '@/components/music/musicList'
 import Player from '@/components/music/MusicPlayer'
-import Photo_detail from '@/components/photo/photo_detail'
+import PhotoDetail from '@/components/photo/photo_detail'
 
 // import CommonFooter from '@/components/common/CommonFooter'
 
@@ -45,11 +45,12 @@ export default new Router({
     },
     {
       path: '/photo',
-      component: Photo,
-      redirect:'/photo/photo_detail',
-      children:[
-        {path:'/photo/photo_detail/:index',component:Photo_detail}
-      ]
+      component: Photo
+    },
+    {
+      path:'/photo/photo_detail/:index',
+      component:PhotoDetail
     }
+
   ]
 })
