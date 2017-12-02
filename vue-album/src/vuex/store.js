@@ -13,14 +13,15 @@ const mutations = {
         state.count += num;
     },
     reduce(state){
-        state.count--; 
+        state.count--;
     }
-}
+};
 
 const getters = {
     count2(state){
         return state.count+100;
-    }
+    },
+
 }
 const actions={
     addAction({commit}){
